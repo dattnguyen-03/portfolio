@@ -1,0 +1,97 @@
+.about {
+    padding: 2rem;
+    min-height: calc(100vh - 180px);
+    /* Adjust based on header + footer height */
+    display: flex;
+    align-items: flex-start;
+}
+
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+}
+
+.imageSection {
+    text-align: center;
+}
+
+.profileImage {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.name {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin: 1rem 0 0.5rem;
+}
+
+.title {
+    color: #4a90e2;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Reduced gap */
+}
+
+.aboutSection h2,
+.skillsSection h3,
+.bioSection h3,
+.interestsSection h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 0.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills span {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.futureSkills {
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.futureSkill {
+    background-color: #e2e8f0 !important;
+    color: #4a5568 !important;
+    border: 1px dashed #4a90e2;
+}
+
+.bioSection p,
+.interestsSection p {
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    /* Reduced margin */
+}
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .imageSection {
+        margin-bottom: 2rem;
+    }
+}

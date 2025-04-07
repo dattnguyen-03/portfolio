@@ -1,0 +1,98 @@
+.container {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+.contactForm {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm label {
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contactForm button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.contactForm button:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+/* Dark mode styles */
+:global(.dark) .contactForm {
+    background: #2d3748;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+:global(.dark) .contactForm label {
+    color: #e2e8f0;
+}
+
+:global(.dark) .contactForm input,
+:global(.dark) .contactForm textarea {
+    background: #1a202c;
+    border-color: #4a5568;
+    color: white;
+}
+
+:global(.dark) .contactForm input:focus,
+:global(.dark) .contactForm textarea:focus {
+    border-color: #63b3ed;
+}
