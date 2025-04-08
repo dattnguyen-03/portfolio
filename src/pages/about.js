@@ -19,11 +19,11 @@ export default function About() {
         
         <div className={styles.contentSection}>
           <div className={styles.aboutSection}>
-            <h2>About Me</h2>
+            <p className={styles.aboutSection}>About Me</p>
             <p>I am a young programmer pursuing a major in Software Engineering, with a focus on Node.js and modern backend solutions.</p>
           </div>
 
-          <div className={styles.skillsSection}>
+          <div className={styles.aboutSection}>
             <h3>Current Skills</h3>
             <div className={styles.skills}>
               <span>React</span>
@@ -34,7 +34,7 @@ export default function About() {
               <span>JavaScript ES6+</span>
             </div>
             
-            <h3 className={styles.futureSkills}>Learning Goals</h3>
+            <h3 className={styles.aboutSection}>Learning Goals</h3>
             <div className={styles.skills}>
               <span className={styles.futureSkill}>Node.js</span>
               <span className={styles.futureSkill}>Express</span>
@@ -42,7 +42,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className={styles.bioSection}>
+          <div className={styles.aboutSection}>
             <h3>My Journey</h3>
             <p>Considering technology as a journey of unlimited creativity, I am always curious and eager to learn how systems are built, operated and expanded.</p>
             <p>With a solid foundation of programming knowledge, and a progressive spirit, I constantly improve my skills from practical projects, self-study and teamwork.</p>
@@ -51,7 +51,7 @@ export default function About() {
             <p>🚀 Long-term goal: Become a Full-stack Developer</p>
           </div>
 
-          <div className={styles.interestsSection}>
+          <div className={styles.aboutSection}>
             <h3>Interests</h3>
             <p>In addition to technology, I am also a sports enthusiast, because sports teach me discipline and perseverance - important qualities to pursue a career in the challenging software industry.</p>
           </div>
